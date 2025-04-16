@@ -1,0 +1,23 @@
+INSERT INTO AUTHENTICATION_SYSTEM (login_id, password) VALUES 
+('staff001', 'pass123'),
+('staff002', 'secure456');
+
+INSERT INTO STAFF (staff_id, name, login_id) VALUES 
+(1, 'Alice Johnson', 'staff001'),
+(2, 'Bob Smith', 'staff002');
+
+INSERT INTO PUBLISHER (publisherid, yearofpublication, name) VALUES 
+(101, 2020, 'Penguin Books'),
+(102, 2022, 'HarperCollins');
+
+INSERT INTO BOOKS (book_no, price, category, edition, auth_no, publisherid) VALUES 
+(1001, 19.99, 'Fiction', '1st', 501, 101),
+(1002, 25.50, 'Science', '2nd', 502, 102);
+
+INSERT INTO READERS (user_id, email, phone_no, address, first_name, last_name) VALUES 
+(201, 'reader1@example.com', '1234567890', '123 Elm St', 'John', 'Doe'),
+(202, 'reader2@example.com', '9876543210', '456 Oak Ave', 'Jane', 'Smith');
+
+INSERT INTO REPORTS (user_id, reg_no, book_no, issue_return) VALUES 
+(201, 3001, 1001, '2025-04-01'),
+(202, 3002, 1002, '2025-04-05');
